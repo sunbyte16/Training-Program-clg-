@@ -58,13 +58,17 @@
 
 
 import java.util.Scanner;
+
 class SwapNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter First Number: ");
         int a = sc.nextInt();
+
         System.out.print("Enter Second Number: ");
         int b = sc.nextInt();
+
         // Swap two numbers without temp variable
         //initially here we take values 
         // a= 10
@@ -73,6 +77,7 @@ class SwapNumbers {
         //After evaluating we get this:
         //a=30-10=20
         //b=10
+
         System.out.println("After Swapping:");
         System.out.println("First Number = " + a);
         System.out.println("Second Number = " + b);

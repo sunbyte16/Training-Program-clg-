@@ -1,30 +1,18 @@
-import java.util.Scanner;
+void main() {
+    Scanner sc = new Scanner(System.in);
 
-class CompoundInterest {
-    public static void main(String[] args) {
+    IO.print("Enter Principal Amount (P): ");
+    double P = sc.nextDouble();
 
-        Scanner sc = new Scanner(System.in);
+    IO.print("Enter Rate of Interest (R): ");
+    double R = sc.nextDouble();
 
-        // Input
-        System.out.print("Enter Principal Amount: ");
-        double principal = sc.nextDouble();
+    IO.print("Enter Number of Years (n): ");
+    double n = sc.nextDouble();
 
-        System.out.print("Enter Rate of Interest (%): ");
-        double rate = sc.nextDouble();
+    double I = P * Math.pow((1 + R / 100), n) - P;
 
-        System.out.print("Enter Time (in years): ");
-        double time = sc.nextDouble();
+    IO.println("Compound Interest = " + I);
 
-        // Calculate Amount
-        double amount = principal * Math.pow((1 + rate / 100), time);
-
-        // Calculate Compound Interest
-        double compoundInterest = amount - principal;
-
-        // Output
-        System.out.println("\nAmount = " + amount);
-        System.out.println("Compound Interest = " + compoundInterest);
-
-        sc.close();
-    }
+    sc.close();
 }
