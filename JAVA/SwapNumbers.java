@@ -69,12 +69,12 @@ class SwapNumbers {
         System.out.print("Enter Second Number: ");
         int b = sc.nextInt();
 
-        // Swap two numbers without temp variable
-        //initially here we take values 
+        // Swap two numbers without Temp variable
+        //Initially here we take values 
         // a= 10
         // b= 20
         a=a+b-(b=a);//Here "(b=a)" does two things
-        //After evaluating we get this:
+        //After evaluating We get this:
         //a=30-10=20
         //b=10
 
